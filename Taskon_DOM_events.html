@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Double click Task</title>
+    <style> 
+        body { 
+            text-align:center; 
+        }     
+        h1 { 
+            color: blue; 
+        } 
+    </style> 
+</head>
+<body>
+    <center> 
+        <h1 style="color: crimson;font-style:italic;">On Double Click</h1> 
+        <h2 style="color: darkturquoise;font-style:italic;">Ondbclick Event Attribute</h2> 
+        <button ondblclick="Hello()">Double-click me</button> 
+          
+        <p id="Double-click"></p> 
+          
+        <script> 
+        function Hello() { 
+            document.getElementById("Double-click").innerHTML = "Md.Mahaboob Khan"; 
+        } 
+        </script> 
+    
+        <h2>onkeypress attribute</h2> 
+        <input type="text" onkeypress=" StayHome_Staysafe()"> 
+        <script> 
+            function StayHome_Staysafe() { 
+                alert("StayHome_Staysafe!"); 
+            } 
+
+        </script> 
+        <h1>On Focus</h1> 
+        <h2>onFocus attribute</h2> 
+        <br> Name: 
+        <input type="text" id="fname"> 
+        
+        <script> 
+         document.getElementById( 
+              "fname").onfocus = function() { 
+                geekfun() 
+            }; 
+            function geekfun() { 
+                document.getElementById( 
+                  "fname").style.backgroundColor = 
+                  "green"; 
+            } 
+            
+        </script> 
+         <h1>On blur</h1> 
+         <h2>onblur attribute</h2> 
+         Username: <input type="text" name="fname" id="mk" 
+         onblur="blur()"> 
+         <script> 
+         function blur() { 
+             var y = document.getElementById("mk"); 
+             y.value = y.value.toUpperCase(); 
+         } 
+         </script> 
+         <center> 
+            <img src= 
+    "https://www.popcultureshocktoys.com/content/images/thumbs/0004192_red-ranger-lifesize-bust-ex_600.jpeg" 
+                 id="imgid"> 
+            <p id="pload"></p> 
+      
+            <script> 
+                document.getElementById( 
+                  "imgid").addEventListener("load", load); 
+      
+                function load() { 
+                    document.getElementById("pload").innerHTML =  
+                      "Image loaded"; 
+                } 
+            </script> 
+        </center> 
+
+          
+</body>
+</html>
